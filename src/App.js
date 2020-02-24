@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/Header'
+import './App.scss';
+import About from './components/About';
+import Features from './components/Features';
+import Tours from './components/Tours';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header />
+    {/* <header className='header'>
+                        <div class="header__logo-box">
+                <img src="img/logo-white.png" alt="Natoure Logo" class="header__logo"/>
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Outdoors</span>
+                    <span class="heading-primary--sub">is where life happens.</span>
+                </h1>
+                <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            </div>
+        </header> */}
+    <main>
+      <About />
+      <Features />  
+        <Tours />
+        </main>
     </div>
   );
 }
