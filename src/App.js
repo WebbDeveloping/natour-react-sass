@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from './components/Header'
+import Header from './components/Header';
 import './App.scss';
 import About from './components/About';
 import Features from './components/Features';
 import Tours from './components/Tours';
 function App() {
   return (
-    <div className="App">
-    <Header />
-    {/* <header className='header'>
+    <div className='App'>
+      <Header />
+      {/* <header className='header'>
                         <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Natoure Logo" class="header__logo"/>
             </div>
@@ -20,11 +20,11 @@ function App() {
                 <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header> */}
-    <main>
-      <About />
-      <Features />  
+      <main>
+        <About />
+        <Features />
         <Tours />
-        </main>
+      </main>
     </div>
   );
 }
